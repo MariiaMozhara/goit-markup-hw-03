@@ -38,6 +38,29 @@ img {
   width: 100%;
 }
 
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -45,6 +68,26 @@ img {
 .list {
   list-style: none;
   text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 24px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
 }
 
 .header-logo {
@@ -55,6 +98,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-part {
@@ -68,6 +112,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -89,6 +134,11 @@ img {
   font-style: normal;
 }
 
+.header-contacts {
+  display: flex;
+  gap: 40px;
+}
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   font-family: "Roboto", sans-serif;
@@ -107,10 +157,19 @@ img {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   text-align: center;
+  max-width: 496px;
 }
 
 .hero {
   background-color: var(--main-text-color);
+  padding: 188px 0;
+}
+
+.hero-container {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-button {
@@ -123,6 +182,11 @@ img {
   background: #4d5ae5;
   font-style: normal;
   font-size: 16px;
+  min-width: 169px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
 }
 
 .hero-button:focus,
@@ -134,6 +198,11 @@ img {
   list-style: none;
 }
 
+.page-principles-list {
+  display: flex;
+  gap: 24px;
+}
+
 .page-principles-title {
   font-weight: 500;
   font-size: 20px;
@@ -143,6 +212,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .page-principles-text {
@@ -153,6 +223,13 @@ img {
   font-style: normal;
   font-size: 16px;
   color: var(--header-link-color);
+}
+
+.page-principles-item {
+  width: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-products-title {
